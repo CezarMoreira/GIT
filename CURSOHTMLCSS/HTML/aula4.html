@@ -10,6 +10,16 @@
         h1 {
             background: yellow;
         }
+
+        .img-test {
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .ver-mel {
+            background: violet;
+        }
     </style>
 </head>
 
@@ -17,6 +27,20 @@
     <h1 style="color: red;">
         cabeçalho
     </h1>
+    <nav>
+        <ul>
+            <li><a href="#">Página inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ol>
+            <li><a href="#">Página inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ol>
+    </nav>
     <p>
         <b>Lorem ipsum dolor sit</b> amet consectetur
         <strong>adipisicing elit.</strong> Nihil optio <i>italico</i> et ab
@@ -24,15 +48,62 @@
         reiciendis <a href="https://github.com/CezarMoreira" target="_blank">git cezar</a> delectus quo quidem iure
         modi necessitatibus
         corporis tenetur, totam velit ad. Quas.
+        <a href="https://github.com/CezarMoreira" target="_blank">git cezar
+            <img src="https://seeklogo.com/images/O/one-piece-logo-14D1E5876D-seeklogo.com.png" alt="logo luffy"
+                width="50" height="50">
+        </a>
+        <img src="https://seeklogo.com/images/O/one-piece-logo-14D1E5876D-seeklogo.com.png" alt="logo luffy" width="50"
+            height="50">
+
     </p>
     <p>
+        <img class="img-test" src="https://seeklogo.com/images/O/one-piece-logo-14D1E5876D-seeklogo.com.png"
+            alt="logo luffy">
         Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Nihil optio et ab
-        numquam possimus doloremque. In aliquid
+        adipisicing <del>vermelho </del> hdsjshf jdjksfjk <s>palavra risacada</s> elit. Nihil optio et ab
+        numquam <u>palavra riscada em baixo</u> possimus doloremque. In aliquid
         reiciendis delectus quo quidem iure
-        modi necessitatibus
-        corporis tenetur, totam velit ad. Quas.
+        modi necessitatibus <small>palara menor</small>
+        corporis tenetur, totam velit ad. Quas. 2<sup>2</sup>
+        h<sub>2</sub>o hsajkfhksajasj jkj akdjkjdksasadjd
+        asdjskakjdcakjsfdszd ad jskfj klfds sf sdfdsg
+        <q cite="https://github.com/CezarMoreira">citação djfhsshfjah safkshjfsjdd hsjhdjsahdfsa
+            dsdbsadjshjdhsd jfkjsd jfsajfkjsdfjfjdkj dj djdfd fda fj kjfakd
+        </q>
+
+        <code> for item in lista:console.log </code>
+
     </p>
+    <p> <span>tem uma tag span aqui</span> </p>
+
+    <hr>
+    <p> <span style="color: blueviolet;">tem uma tag span aqui</span> </p>
+    <hr>
+    <p> <span class="ver-mel">tem uma tag span aqui</span> </p>
+
+    <p>
+    <pre>
+            <code>
+                for lista in listas:
+                    if item in lista:
+                        print('item')
+            </code>
+        </pre>
+    <blockquote cite="https://github.com/CezarMoreira">
+        aqui estou fazendo um bloco de citação
+    </blockquote>
+
+    <blockquote cite="https://github.com/CezarMoreira">
+        <p>hjfhsdfkjdsfjkdsjfkdjfgj</p> aqui estou fazendo um bloco de citação
+    </blockquote>
+    <hr>
+    <p> <span>tem uma tag span aqui</span> </p>
+    <div class="ver-mel">
+        tem uma div aqui
+    </div>
+
+
+
 </body>
 
 </html>
