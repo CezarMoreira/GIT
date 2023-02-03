@@ -67,6 +67,17 @@ exemplo:
 
 ---------
 
-aula3:
-
-
+aula4:
+da para por a tag <style> dentro de outra 
+tag e aplicar o estilo direto 
+exemplo:
+<h1 style="color: red;">
+    cabeçalho
+</h1>
+tag mais usadas:
+<b></b> deixa a palavra em negrito
+<strong></strong> deixa a palavra mais forte no texto
+<I></i> deixa em italico
+<em></em> da emfaze na palavra
+<a href="coloca um link de um site"> palavra  vai ficar lincada</a> vai criar uma palavra com um link que vai abrir na mesma aba
+<a href="coloca um link de um site" target = '_blank'> palavra  vai ficar lincada</a> vai criar uma palavra com um link que vai abrir em outra aba
