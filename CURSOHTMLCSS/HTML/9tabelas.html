@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table td,
+        table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        table caption {
+            color: blueviolet;
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        tfoot td {
+            background: #ddd;
+            font-style: italic;
+        }
+
+        table th {
+            background: #003;
+            color: white;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+    <!--
+    .responsive-table {
+            max-width: 100%; largura maxima da tela para celulares
+            overflow-x: auto; barra de rolagem na tabela 
+-->
+    <!--
+        color: blueviolet; cor da fonte
+        caption-side: bottom; deixa em baixo da tabela
+        text-align: right; deixa para direita
+        font-style: italic; deixa em italico
+        font-size: 14px; tamanho da fonte
+        margin: 15px 0; afastapara nao ficar colado a tabela
+    -->
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur a
+        dipisicing elit. Quidem mollitia, voluptatum
+    </p>
+    <!--
+    table começa atabela 
+    <thead> <th> titulo da tabela
+    <caption> descrição da tabela
+-->
+
+    <!-- table é a tag de abertura da tabela -->
+    <div class="responsive-table">
+        <table>
+            <caption>Aqui vai uma descrição para a tabela</caption>
+            <!--thead é titulo da tabela-->
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+            <!--
+    <tbody> <td> corpo da tabela precisa ter a mesma quantidade
+    de titulos
+-->
+            <!--tbody é o corpo da tabela-->
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <!--colspan vai uma coluna ocupar outras colunas-->
+                <tr>
+                    <td colspan="2">ocupando duas colunas com colspan</td>
+                    <td>Corpo 2</td>
+
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">ocupando tres colunas com colspan</td>
+                </tr>
+            </tbody>
+            <!--tfoot é o rodape da tabela-->
+            <tfoot>
+                <tr>
+                    <td>rodape</td>
+                    <td>rodape</td>
+                    <td>rodape</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
