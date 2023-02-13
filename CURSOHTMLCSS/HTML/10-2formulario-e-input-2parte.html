@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+
+        }
+
+        .box {
+            display: block;
+        }
+    </style>
+    <!--label {cursor: pointer; deixa o label clicavel, clicando nele ele direciona
+    para o input direto
+     label {display: block; trasforma o label em um bloco e faz ele quebrar linha
+-->
+
+    <!--
+        link para auxiliar em formularios:
+        https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form
+        https://www.w3schools.com/html/html_form_input_types.asp
+    -->
+    <!--fieldset serve para agrupar os campos de um formulario-->
+</head>
+
+<body>
+    <!--<form> para começar o formulario
+    <action> para descrever para aonde vai enviar as 
+    informaçoẽs coletadas do formulario. exemplo:
+    pode ser uma urls, banco de dados, para mesma pagina 
+    do formulario, ou um caminho de um arquivo que esta
+    dentro do sistema.
+    target="_blank" Só por enquanto! para enviar o formulario para uma nova pagina
+    autocomplete="off" só por enquanto! para que nao fique mandando auto-complete
+    decoisas que  já foram digitadas!
+    -->
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <h1>O meu Formulário</h1>
+
+
+        <!--
+                campo para texto
+                id ="nome" para lincar o texto coletado com o imput usado
+                name="nome" para usar no back end como chave usado no servidor
+                placeholder="Seu Nome" texto de exemplo para o usuario visualizar 
+                e saber o que é para ele digitar
+                value="Cezar Moreira" vai junto com o que a pessoa digitar no input 
+                como tipo uma chave mais nao é obrigatório
+                disabled desativa o input e o usuario nao consegui digitar
+                <label for="nome">Nome:</label> nome que fica em cima ou ao lado do campo do input
+
+            -->
+
+
+        <p>
+            <!--
+                <button> botão
+                type="submit" serve para enviar o Formulário
+                type="reset" serve para resetar o formulário para o valor padrão
+
+            -->
+            <label class="box" for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            <!--required torna obrigatório o preenchimento do input-->
+        </P>
+        <p>
+            <!--
+                <button> botão
+                type="submit" serve para enviar o Formulário
+                type="reset" serve para resetar o formulário para o valor padrão
+
+            -->
+            <label for="dev">Sou um Dev</label>
+            <input type="checkbox" id="dev" name="dev" value="Sim" checked>
+            <!--<input type="checkbox" torna o input de marcar
+            value="Sim" vai chegar no servidor que foi marcado como sim
+            checked: deixa o formulário marcado como padrão
+            da para marcar mais de uma opção
+    -->
+            <label for="dev1">Sou um Dev1</label>
+            <input type="checkbox" id="dev1" name="dev1" value="Sim" checked>
+            <label for="dev2">Sou um Dev2</label>
+            <input type="checkbox" id="dev2" name="dev2" value="Sim" checked>
+            <label for="dev3">Sou um Dev3</label>
+            <input type="checkbox" id="dev3" name="dev3" value="Sim" checked>
+
+        </P>
+        <p>
+            <!--
+                da para marcar apenas uma opção
+            -->
+            Genero<br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" checked>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculin" name="genero" value="masculino" checked>
+            <label for="outros">Outros</label>
+            <input type="radio" id="outros" name="genero" value="outros" checked>
+        </p>
+
+        <P>
+            <button type="reset">Resetar</button>
+            <button type="submit"> Enviar</button>
+        </p>
+    </form>
+</body>
+
+</html>
