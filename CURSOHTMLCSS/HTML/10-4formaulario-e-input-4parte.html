@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <form>
+        <p>
+            <!--
+        input de senha 
+        type="password"
+
+        
+    -->
+            <label for="password">Senha</label>
+            <input type="password" id="password" nome="password" placeholder="Digite sua senha">
+        </p>
+        <p>
+            <!--
+        input de range
+        type="range"
+        min="0" da para definir um minimo
+        max="10" da para definir maximo
+        step="2" faz pular de 2 em 2
+        
+    -->
+            <label for="range">Range</label>
+            <input type="range" id="range" nome="range" min="0" max="10" step="2">
+
+
+
+        </p>
+        <p>Audio settings:</p>
+
+
+        <input type="range" id="volume" name="volume" min="0" max="11">
+        <label for="volume">Volume</label>
+
+        <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+        <label for="cowbell">Cowbell</label>
+
+
+        <p>
+            <label for="temp1">Temperature for room 1:</label>
+            <input type="range" id="temp1" name="temp1" list="values" />
+        </p>
+        <p>
+            <label for="temp2">Temperature for room 2:</label>
+            <input type="range" id="temp2" name="temp2" list="values" />
+        <p>
+            <label for="temp3">Temperature for room 3:</label>
+            <input type="range" id="temp3" name="temp3" list="values" />
+        </p>
+
+        <datalist id="values">
+            <option value="0" label="0"></option>
+            <option value="25" label="25"></option>
+            <option value="50" label="50"></option>
+            <option value="75" label="75"></option>
+            <option value="100" label="100"></option>
+        </datalist>
+
+
+        <p>
+            <!--
+        input de urls 
+        type="url"
+
+        
+    -->
+            <label for="url">Url</label>
+            <input type="url" id="url" nome="url" placeholder="URL">
+        </p>
+        <p>
+            <!--
+        input de busca 
+        type="search"
+
+        
+    -->
+            <label for="search">search</label>
+            <input type="search" id="search" nome="search" placeholder="search">
+        </p>
+        <p>
+            <!--
+        input de escolha
+        type="select"
+        value="qualquer 1" informaçao que chega no banco de dados
+        label="valor 1" informaçao que aparece para o usuario escolher
+        selected deixa que a oção ja venha selecionada por padrão
+        disabled nao deixa o usuario clicar na opção
+
+        
+    -->
+            <label for="select">Selecione uma opção</label>
+            <select name="select" id="select">
+                <option value="qualquer 1" label="valor 1" selected>valor</option>
+                <option value="qualquer 2" label="valor 2">valor</option>
+                <option value="qualquer 3" label="valor 3">valor</option>
+                <option value="qualquer 4" label="valor 4">valor</option>
+                <option value="qualquer 5" label="valor 5">valor</option>
+                <option value="qualquer 6" label="valor 6" disabled>valor</option>
+            </select>
+        </p>
+        <p>
+            <!--
+        input de escolha
+        type="select"
+        value="qualquer 1" informaçao que chega no banco de dados
+        label="valor 1" informaçao que aparece para o usuario escolher
+        selected deixa que a oção ja venha selecionada por padrão
+        disabled nao deixa o usuario clicar na opção
+        <optgroup label="grupo1"> forma varios grupo de escolha
+        
+    -->
+            <label for="select">Selecione uma opção</label>
+            <select name="select" id="select">
+                <optgroup label="grupo1">
+                    <option value="qualquer 1" label="valor 1" selected>valor</option>
+                    <option value="qualquer 2" label="valor 2">valor</option>
+                </optgroup>
+                <optgroup label="grupo2">
+                    <option value="qualquer 3" label="valor 3">valor</option>
+                    <option value="qualquer 4" label="valor 4">valor</option>
+                </optgroup>
+                <optgroup label="grupo3">
+                    <option value="qualquer 5" label="valor 5">valor</option>
+                    <option value="qualquer 6" label="valor 6" disabled>valor</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <!--
+        input de escolha
+        type="select"
+        value="qualquer 1" informaçao que chega no banco de dados
+        label="valor 1" informaçao que aparece para o usuario escolher
+        selected deixa que a oção ja venha selecionada por padrão
+        disabled nao deixa o usuario clicar na opção
+        multiple para selecionar mais de uma opção apertando ctrl seleciona de uma em uma,
+        apertando o shift seleciona todas as opçcoes ao mesmo tempo
+
+        
+    -->
+            <label for="select">Selecione uma opção</label>
+            <select name="select" id="select" multiple>
+                <option value="qualquer 1" label="valor 1" selected>valor</option>
+                <option value="qualquer 2" label="valor 2">valor</option>
+                <option value="qualquer 3" label="valor 3">valor</option>
+                <option value="qualquer 4" label="valor 4">valor</option>
+                <option value="qualquer 5" label="valor 5">valor</option>
+                <option value="qualquer 6" label="valor 6" disabled>valor</option>
+            </select>
+        </p>
+
+
+        <P>
+            <button type="reset">Resetar</button>
+            <button type="submit"> Enviar</button>
+        </p>
+
+
+    </form>
+</body>
+
+</html>
