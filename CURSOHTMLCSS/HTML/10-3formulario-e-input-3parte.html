@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>input de data, data-time, time, cor, email, arquivo, numero</h1>
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>
+            <!--
+        input de data
+        type="date"
+        value="2023-02-13" vem com essa data por padrão
+        não é obrigatorio por esse value pq ele ja vem com um por padrão
+        
+    -->
+            <label for="data">input de date</label>
+            <input type="date" id="data" nome="data" value="2023-02-13">
+
+        </p>
+        <p>
+            <!--
+        input de data
+        type="datetime-local"
+        value="2023-02-13T16:00" vem com essa data por padrão 
+        não é obrigatorio por esse value pq ele ja vem com um por padrão
+        
+    -->
+            <label for="datetime-local">input de datetime</label>
+            <input type="datetime-local" id="datetime-local" nome="datetime-local" value="2023-02-13T16:00">
+        </p>
+        <p>
+            <!--
+        input de hora
+        type="time"
+        value="16:00" vem com essa hora por padrão 
+        value="16:00:01" vem com essa hora por padrão 
+        não é obrigatorio por esse value pq ele ja vem com um por padrão
+        
+    -->
+            <label for="time">input de time</label>
+            <input type="time" id="time" nome="time" value="16:00:01">
+        </p>
+        <p>
+            <!--
+        input de cor
+        type="color"
+        value="#FF0000" vem com essa cor por padrão mais pode escolher qualquer uma que quiser
+        link de opçcoes de cores:https://www.w3schools.com/colors/colors_picker.asp
+        
+    -->
+            <label for="cor">Cor Preferida</label>
+            <input type="color" id="cor" nome="cor" value="#b84dff">
+        </p>
+        <!--
+        input de email
+        type="email"
+        placeholder="ex. :email@email.com" vai vir com esse exemplo no formulario
+        e serve como um verificado para ver se é um email correto
+        
+    -->
+        <label for="email">Qual e-mail</label>
+        <input type="email" id="email" nome="email" placeholder="ex. :email@email.com">
+        </p>
+        <!--
+        input de arquivos
+        type="file" aceita qualquer tipo de arquivo
+        accept=".png" vai aceitar arquivos somente do tipo png
+        accept=".png, .svg,image/*" vai aceitar alem do png ,jpg e svg
+        multiple para aceitar mais de um arquivo
+    -->
+        <label for="file">Sua foto</label>
+        <input type="file" id="file" nome="file" accept=".png, .svg,image/*" multiple>
+        </p>
+        <p>
+            <!--
+        input de número
+        type="number" aceita número
+        min="10" define um numero minimo para iniciar 
+        max="50" define um numero maximo de limite
+        step="5" faz o contador pular de 5 em 5
+        
+    -->
+            <label for="number">Number</label>
+            <input type="number" id="number" nome="number" placeholder="Digite um número" min="10" max="50" step="5">
+        </p>
+        <P>
+            <button type="reset">Resetar</button>
+            <button type="submit"> Enviar</button>
+        </p>
+
+    </form>
+</body>
+
+</html>
