@@ -1,0 +1,38 @@
+/* Tipos de seletores do CSS */
+/* atalho:
+ alt + z faz texto grnde qebrar linha 
+ seleciona + crlt + / para comentar automaticamente
+ ctrl + shift + i formata automaticamente
+ ctrl + s salva o arquivo 
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* vai fazer a div nao herdar a cor da div pai */
+div {
+    color: initial;
+    margin: 20px;
+}
+
+/* seleção separa aplica na div filha */
+/* .pai .filha {
+    color: red;
+} */
+
+/* seleção colada tem que ter a classe pai e filha na
+ mesma div:
+.pai.filha {
+    color: red;
+} */
+
+/* para selecionar só as filhas: */
+/* .pai>.filha {
+    color: blue;
+} */
+
+/* para selecionar somente a filha da filha */
+.pai>.filha>.filha {
+    color: blue;
+}

@@ -1,0 +1,16 @@
+/* Tipos de seletores do CSS */
+/* atalho:
+ alt + z faz texto grnde qebrar linha 
+ seleciona + crlt + / para comentar automaticamente
+ ctrl + shift + i formata automaticamente
+ ctrl + s salva o arquivo 
+ */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* para separa mais especifico o valor do atributo */
+[meu-atributo~="meu-valor2"] {
+    color: red;
+}
