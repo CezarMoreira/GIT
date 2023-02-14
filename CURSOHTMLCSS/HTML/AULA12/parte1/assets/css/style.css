@@ -1,0 +1,39 @@
+/* Tipos de seletores do CSS */
+/* atalho:
+ alt + z faz texto grnde qebrar linha 
+ seleciona + crlt + / para comentar automaticamente
+ ctrl + shift + i formata automaticamente
+ ctrl + s salva o arquivo 
+ */
+
+/* asterisco seleciona tudo, geralmente 
+usado para zerar todas as configuraçõesda pagina
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* selecionando por tag: é so por o nome da tag . */
+p {
+    color: darkblue;
+}
+
+/* selecionando á tag mais especifico */
+body div section p {
+    color: red;
+}
+
+/* selecionando  mais de uma tags especifico */
+body div section p,
+body div section h1 {
+    color: red;
+}
+
+/* selecionando  mais de uma tags */
+h1,
+p {
+    color: purple;
+}
+
+/*  */

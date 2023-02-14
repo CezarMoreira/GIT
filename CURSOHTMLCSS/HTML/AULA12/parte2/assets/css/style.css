@@ -1,0 +1,41 @@
+/* Tipos de seletores do CSS */
+/* atalho:
+ alt + z faz texto grnde qebrar linha 
+ seleciona + crlt + / para comentar automaticamente
+ ctrl + shift + i formata automaticamente
+ ctrl + s salva o arquivo 
+ */
+
+/* classes  pode ser usado mais de uma vez */
+.color-red {
+    color: red;
+}
+
+/* classe pai */
+.main-content h2 {
+    font-style: italic;
+}
+
+/* elemento que esta dentro de uma classe que recebe outra classe */
+.main-content .heading {
+    font-style: italic;
+    color: blue;
+}
+
+/* ser especifico ao elemento que esta selecionando  */
+.main-content h3.heading {
+    font-style: italic;
+    color: blue;
+}
+
+/* ser especifico ao elemento que esta selecionando  */
+div.main-content h4.heading {
+    font-style: italic;
+    color: blue;
+}
+/* fazer alguns elementos da pagina se comportarem diferente*/
+body.error div.main-content h4.heading {
+    font-style: italic;
+    color: blue;
+
+}
