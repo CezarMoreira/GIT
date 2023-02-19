@@ -1,0 +1,45 @@
+/* pseudo elementos 
+link:https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements
+*/
+
+/* vai adicionar elementos na pagina depois do conteudo*/
+/* ul li::after {
+    content: '-';
+    background: red;
+    color: white;
+    display: block;
+} */
+/* vai adicionar elementos na pagina antes do conteudo*/
+/* ul li::before {
+    content: '-';
+    background: red;
+    color: white;
+    display: block;
+} */
+
+/* a primeira letra do texto loren vai ficar maior */
+/* p::first-letter {
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+p {
+    font-size: 20px;
+}
+
+/* a primeira linha do texto loren vai ficar azul */
+/* p::first-line {
+    background: blue;
+    color: white; */
+
+
+/* tudo que for selecionado no texto vai ganhar o estilo */
+ p::selection {
+    background: yellow;
+    color: blue;
+}  
+
+.form-field::placeholder {
+    color: red;
+}

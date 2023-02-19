@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.grid .col{
+    
+    width: 33.33%;/* largura */
+    height: 300px;/* altura */
+    /* background: red;ganha cor */
+    /* margin: 30px; ganha margem */
+    float: left; /* flutua para esquerda */
+    /* float: right; flutua para a direita */
+    box-sizing: border-box;
+    padding: 15px;
+}
+.grid .col-content {
+    height: 100%;
+    width: 100%;
+    background: red;
+
+}
+
+/*
+link https://developer.mozilla.org/pt-BR/docs/Web/CSS/display
+display: block -> blocos 
+display:inline-block -> bloco em linha
+
+*/
+.grid {
+    padding: 15px;
+}
+
+.grid::after {
+    content: ' '; /* vai adicionar um espaço vazio depois de cada div*/
+    display: block;
+    clear: both;
+}
+
+
+
+
+p {
+    clear: left; /* limpa a esquerda e começa pela esquerda */
+    /* clear: right; limpa a direita e começa pela direita */
+    /* clear: both; limpa os dois lados e começa do zero */
+}
