@@ -1,0 +1,73 @@
+/* Tipos de seletores do CSS */
+/* atalho:
+ alt + z faz texto grnde qebrar linha 
+ seleciona + crlt + / para comentar automaticamente
+ ctrl + shift + i formata automaticamente
+ ctrl + s salva o arquivo 
+ */
+
+/* link do pseudo-classes */
+ /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* todo o efeito que ocorrer com a classe selecionada 
+com um tempo mais longo */
+.heading {
+    transition: all 1s ease-in-out;
+}
+
+/* vai aparecer um sobreamento na palavra ao passar o mause */
+.heading:hover {
+    background: red;
+}
+
+
+
+/* colocar cor em links que foram abertos 
+e para links que nao foram abertos */
+/* links visitados: */
+a:link {
+    color:deeppink;
+}
+/* links nao visitados: */
+a:visited {
+    color: rgb(196, 123, 14);
+}
+/* quando  por o mouse em cima vai aplicar esses estilos */
+a:hover {
+    background: rgb(72, 72, 175);
+    color: white;
+    text-decoration: none;
+}
+/* quando clicar vai sombrear */
+a:active {
+    background: rgb(202, 13, 13);
+    color: white;
+    text-decoration: none;
+}
+
+/* quando clicar no input vai ficar com uma borda */
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+}
+/* dar efeit no input desabilitado */
+input:disabled {
+    background: rgb(226, 33, 33);
+    cursor: not-allowed; /* vai parecer um proibido*/
+
+}
+
+/* quando o inputtiver checked(selecionado) o tamanho 
+dele sera diferente */
+input:checked {
+    width: 50px;
+    height: 50px;
+}
+/* quando o input tiver selecionado vai dar cor ao p */
+input:checked + p {
+    background: rebeccapurple;
+} 

@@ -13,4 +13,26 @@
 /* para separa mais especifico o valor do atributo */
 [meu-atributo~="meu-valor2"] {
     color: red;
+} 
+/* para selecionar valores com traço */
+[meu-atributo|="valor"] {
+    color: blue;
+} 
+/* para selecionar um atributo que começar com :
+voce escolhe a primeira palavra chave do atributo*/
+[meu-atributo^="valor "] {
+
+    color: violet;
+}
+/* para selecionar um atributo que termina com:
+voce escolhe a ultima paravra chave do atributo */
+[meu-atributo$="ve"] {
+
+    color: brown;
+}
+/* seletor de contem: se tiver 
+qualque coisa procurada no atributo ja funciona*/
+[meu-atributo*="i"] {
+
+    color: rgb(58, 228, 25);
 }

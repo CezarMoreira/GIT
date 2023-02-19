@@ -1,0 +1,31 @@
+/* Tipos de seletores do CSS */
+/* atalho:
+ alt + z faz texto grnde qebrar linha 
+ seleciona + crlt + / para comentar automaticamente
+ ctrl + shift + i formata automaticamente
+ ctrl + s salva o arquivo 
+ */
+
+/* link do pseudo-classes */
+ /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* todos os paragrafos menos os que tiverem a 
+classe meio vao ter a cor azul */
+p:not(.meio) {
+    color: blue;
+}
+
+
+/* se o input for marcado o p ganha a cor vermelha */
+input:checked + p {
+    background: red;
+}
+
+/* se o input não for marcado o p ganha a cor roxa */
+input:not(:checked )+ p {
+    background: rgb(121, 18, 224);
+}

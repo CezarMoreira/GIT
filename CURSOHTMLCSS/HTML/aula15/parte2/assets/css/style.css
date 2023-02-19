@@ -1,0 +1,28 @@
+/* Tipos de seletores do CSS */
+/* atalho:
+ alt + z faz texto grnde qebrar linha 
+ seleciona + crlt + / para comentar automaticamente
+ ctrl + shift + i formata automaticamente
+ ctrl + s salva o arquivo 
+ */
+
+/* link do pseudo-classes */
+ /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* vai selecionar todos os li */
+.pai .lista li {
+    background: red;
+}
+
+/* vai selecionar o ultimo li de baixo*/
+.pai .lista li:last-child {
+    background: blue;
+}
+
+input:required {
+    background: rebeccapurple;
+}
