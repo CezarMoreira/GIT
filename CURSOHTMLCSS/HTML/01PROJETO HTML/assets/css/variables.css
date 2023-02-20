@@ -1,0 +1,10 @@
+/* :root variavei globais 
+--gap: 3rem;  define as lacunas (barreiras) entre linhas e colunas.
+*/
+:root {
+    --primary-color: #0A1128;
+    --white-color: #FFFFFF;
+    --gap: 3rem;
+    --light-gray-color: #EEEEEE;
+    --segundary-color:crimson;
+}

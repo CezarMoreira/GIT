@@ -1,0 +1,34 @@
+/* .main-bg {
+background-image: url('../img/main-vg.svg'); colocar uma imagem de background
+background-size: cover; ajustar o posicinamento do background
+background-position: center center;ajustar o posicinamento do background 
+*/
+.main-bg {
+    background-image: url('../img/main-vg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+
+/* usado na segunda sessão */
+.white-bg {
+        background: var(--white-color);
+}
+
+
+/* .main-content
+max-width: 1200px; largura maxima da pagina */
+.main-content {
+    max-width: 120rem;
+    margin: auto;
+    padding: var(--gap);
+}
+
+
+/* .section
+min-height: 100vh; a imagem vai ocupar o espaço de toda a tela da sessão
+*/
+.section {
+    min-height: 100vh;
+}

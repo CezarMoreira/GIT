@@ -1,1 +1,3 @@
 link: https://github.com/luizomf/landing-page-cursojs/commit/185c0bc9daa4fcf1cb213ea70ffe4d722c326e28
+https://www.svgbackgrounds.com/#confetti-doodles  IMGENS DE FUNDO
+https://validator.w3.org/nu/#textarea   VALIDADOR DO HTML
