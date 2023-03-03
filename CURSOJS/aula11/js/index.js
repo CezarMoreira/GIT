@@ -28,3 +28,6 @@ console.log(outraString.split('r'));//removendo os r
 console.log(outraString.split(' ', 3));//removendo 3 espaços
 console.log(outraString.toUpperCase());//deixa tudo maiusculo
 console.log(outraString.toLocaleLowerCase());//deixa tudo minuscula
+
+
+
